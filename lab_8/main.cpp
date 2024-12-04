@@ -40,7 +40,7 @@ int main(){
         matrix[i][n+1] = i;
     }
 
-        for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i) {
         int index = SelectRow(matrix, i,m,n);
         if (index == -1) {
             std::cout << "-1" << std::endl;
