@@ -67,6 +67,7 @@ std::string find_values(const std::unordered_map<std::string,int>& dict,const in
 
 std::string decompress(std::vector<int>& codes,std::unordered_map<std::string,int> dict){
     std::string ans;
+    ans.reserve(MAX_N);
     int last_number = 26;
     std::string last_push = "";
     for(int code:codes){
